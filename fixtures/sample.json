@@ -1,0 +1,12 @@
+{
+  "source_id": "source-a",
+  "url": "https://example.test/source",
+  "status": 200,
+  "headers": [
+    [
+      "Content-Type",
+      "application/json"
+    ]
+  ],
+  "body_base64": "eyJyZWNvcmRzIjogW3sic3RvcmVfaWQiOiAicy0xIiwgImFkZHJlc3MiOiAi5Lqz5bee6Lev5LiA5Y+3IiwgImxvbiI6IDExNy4zLCAibGF0IjogMzEuOH1dfQ=="
+}
