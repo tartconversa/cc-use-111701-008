@@ -1,0 +1,53 @@
+{
+  "viewports": [
+    {
+      "name": "mobile-390x844",
+      "width": 390,
+      "height": 844,
+      "device_scale_factor": 3,
+      "is_mobile": true,
+      "locale": "zh-CN",
+      "timezone": "Asia/Shanghai",
+      "reduced_motion": true,
+      "user_agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+    }
+  ],
+  "registrations": [
+    {
+      "qr_id": "qr-1",
+      "store_id": "s-1",
+      "printed_url": "https://m.example.test/q/1",
+      "allowed_domains": ["example.test"]
+    },
+    {
+      "qr_id": "qr-2",
+      "store_id": "s-1",
+      "printed_url": "https://m.example.test/q/2",
+      "allowed_domains": ["example.test"]
+    },
+    {
+      "qr_id": "qr-3",
+      "store_id": "s-1",
+      "printed_url": "https://m.example.test/q/3",
+      "allowed_domains": ["example.test"]
+    },
+    {
+      "qr_id": "qr-4",
+      "store_id": "s-1",
+      "printed_url": "https://m.example.test/q/4",
+      "allowed_domains": ["example.test"]
+    },
+    {
+      "qr_id": "qr-5",
+      "store_id": "s-1",
+      "printed_url": "https://m.example.test/q/5",
+      "allowed_domains": ["example.test"]
+    },
+    {
+      "qr_id": "qr-9",
+      "store_id": "s-2",
+      "printed_url": "https://m.example.test/q/9",
+      "allowed_domains": ["example.test"]
+    }
+  ]
+}

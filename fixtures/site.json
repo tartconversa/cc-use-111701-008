@@ -1,0 +1,64 @@
+{
+  "https://m.example.test/q/1": {
+    "status": 302,
+    "headers": {
+      "Location": "/gate/1",
+      "Content-Type": "text/html"
+    }
+  },
+  "https://m.example.test/gate/1": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><head><meta http-equiv='refresh' content='0; url=/hop/1'></head><body>gate</body></html>"
+  },
+  "https://m.example.test/hop/1": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><head><title>hop</title></head><body><script>window.setTimeout(function(){location.assign('/final/campaign-v1')}, 1500);</script></body></html>"
+  },
+  "https://m.example.test/final/campaign-v1": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><head><title>活动一</title></head><body data-content-id='campaign-v1'>活动一</body></html>"
+  },
+  "https://m.example.test/q/2": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><head><meta http-equiv='refresh' content='1;URL=\"/final/campaign-v1\"'></head><body>q2</body></html>"
+  },
+  "https://m.example.test/q/3": {
+    "status": 302,
+    "headers": {
+      "Location": "https://partner.test/landing"
+    }
+  },
+  "https://m.example.test/q/4": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><head><script>location.href='/q/4';</script></head><body>loop</body></html>"
+  },
+  "https://m.example.test/q/5": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><body><a id='enter' data-auto-navigate href='/final/campaign-v1'>进入</a><script>document.getElementById('enter').click();</script></body></html>"
+  },
+  "https://m.example.test/q/9": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "text/html; charset=utf-8"
+    },
+    "body": "<html><body data-content-id='campaign-v1'>活动一</body></html>"
+  }
+}

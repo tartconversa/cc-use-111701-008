@@ -1,7 +1,6 @@
 """单次来源响应读取与身份校验。"""
 import base64
 import hashlib
-import json
 import urllib.error
 import urllib.request
 from dataclasses import dataclass
